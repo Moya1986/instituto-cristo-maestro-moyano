@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #524d4d;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "foot foot foot"; }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: nav; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: foot; }
+
+#logo {
+  float: left;
+  width: 16vh;
+  display: inline; }
+
+#navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none; }
+
+#nombre-instituto {
+  text-align: center;
+  font-family: 'Ephesis', cursive;
+  font-size: 7vh;
+  font-weight: bold;
+  color: #524d4d;
+  padding-bottom: 0px;
+  padding-top: 7vh;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  margin-top: 0px; }
+
+.links {
+  display: inline-block;
+  color: #D23E3E !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 1vh; }
+  .links:hover {
+    text-shadow: 0px 0px 6px white;
+    box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 2s ease 0s; }
+
+#estudiantes {
+  width: 100%;
+  height: 100%; }
+
+#foto-octavio {
+  float: left;
+  padding-right: 15.6vh;
+  width: 35vh;
+  padding-left: 5vh; }
+
+#foto-instituto {
+  float: left;
+  padding-right: 5.6vh;
+  width: 45vh;
+  padding-left: 5vh; }
+
+#historia {
+  text-align: justify;
+  padding-right: 8vh;
+  padding-left: 55vh;
+  padding-bottom: 10vh;
+  margin-top: 14vh;
+  margin-bottom: 7vh; }
+
+#mision {
+  text-align: justify;
+  padding-right: 8vh;
+  padding-left: 55vh; }
+
+h3 {
+  color: #D23E3E; }
+
+#lema {
+  text-align: center;
+  font-family: 'Ephesis', cursive;
+  font-size: 6vh;
+  font-weight: bold;
+  color: #524d4d;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  margin-top: 0px;
+  background-color: #BBE1C3; }
+
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100; }
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s; }
+
+.icon-facebook {
+  background: #2E406E; }
+
+.icon-whatsapp {
+  background: #00bb2d; }
+
+.icon-blogger {
+  background: #E83028; }
+
+.icon-instagram {
+  background: #3F60A5; }
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0; }
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem; }
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42); }
+
+#mapa {
+  margin-top: 7vh; }
+
+.card-img-top {
+  width: 50vh; }
+
+@media (max-width: 768px) {
+  body {
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "foot foot foot"; }
+  #logo {
+    float: none;
+    text-align: right;
+    width: 16vh;
+    display: inline; }
+  #navegacion {
+    flex-direction: column;
+    text-align: center; }
+  #foto-octavio {
+    display: block;
+    text-align: center;
+    width: 35vh;
+    padding-left: 5vh; }
+  #foto-instituto {
+    display: block;
+    text-align: center;
+    width: 45vh;
+    padding-left: 5vh; }
+  #historia {
+    text-align: justify;
+    padding: 40vh 1vh 1vh 1vh; }
+  #mision {
+    text-align: justify;
+    padding: 30vh 1vh 0vh 1vh; } }
+
+/* El Form de Inscripciones*/
+.contenedor-formulario {
+  max-width: 450px;
+  height: auto;
+  background-color: #EFEFEF;
+  margin: 5% auto;
+  padding-bottom: 1rem; }
+
+.form__top {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  border-top: solid .4rem #F39B53;
+  margin-bottom: 1rem; }
+
+.form__top h2 {
+  font-weight: bold;
+  color: #CAC8C8;
+  font-size: 18px; }
+
+h2 span {
+  color: #F39B53; }
+
+.form__reg {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.btn__form {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem; }
+
+.input, .btn__submit, .btn__reset {
+  background-color: #EFEFEF;
+  padding: .5rem;
+  margin: .5rem 0;
+  border: none;
+  border-bottom: solid #C8C8C8 .2rem;
+  transition: all .5s; }
+
+.input:focus {
+  border-bottom: solid #F39B53 .2rem; }
+
+.btn__submit, .btn__reset {
+  width: 40%;
+  border-bottom: none;
+  background-color: #31B1E5;
+  color: white; }
+
+.btn__reset {
+  background-color: #EDA135; }
+
+.btn__submit:hover {
+  background-color: #4C9ED9; }
+
+.btn__reset:hover {
+  background-color: #FA9535; }
+
+/* Acá finaliza el CSS del Form de Inscripciones*/
