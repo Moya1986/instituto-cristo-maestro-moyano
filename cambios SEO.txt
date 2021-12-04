@@ -1,0 +1,3 @@
+meta: agregué meta description y content al index.html.
+El shortcut icon lo tenía hace tiempo puesto.
+Modifiqué los títulos de todas las páginas. Ej: Institucional | Instituto Cristo Maestro 
